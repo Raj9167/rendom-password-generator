@@ -1,0 +1,76 @@
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<div class = 'container text-center'>
+
+<h1> PASSWORD GENERATOR </h1>
+<style>
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, #209cff 100%, #68e0cf 200%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	margin: 40px 0;
+	width: 400px;
+	height: 600px;
+	padding: 10px 25px;
+	background: #969cd0;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
+	font-family: "Montserrat";
+}
+
+.result {
+	position: relative;
+}
+
+  </style>
+<br>
+<form action= "{% url 'password' %}" class="dropdown">
+  <select name = "length">
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="9">10</option>
+    <option value="9">11</option>
+    <option value="9">12</option>
+    <option value="9" selected='selected'>Select</option>
+  </select>
+  <br>
+  <!-- <br><input type='textbox' name='a'> enter ur name <br>
+  <br><input type='checkbox' name='uppercase'> Uppercase <br>
+  <br><input type='checkbox' name='special'> Special <br>
+  <br><input type='checkbox' name='numbers'> Numbers <br>
+  <br> -->
+  
+  <form action="/ . /" method="GET">
+    <input type='checkbox' name='uppercase'> Uppercase <br> 
+    <label for="fname">Enter Your name:</label>
+    <input type="text" name="a"><br>
+    <label for="fname">Enter number  :</label>
+   <input type="text" name="b"><br>
+   <label for="fname">Special Characters:</label>
+   <input type="text" name="c"><br>
+  
+   
+   <input type='submit' value='Generate Password' class="btn btn-primary">
+  </form>
+   
+
+
+<a href= "{% url 'about' %}"> About </a>
+
+</div>
+
+
